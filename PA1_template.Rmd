@@ -1,5 +1,5 @@
 ## Loading and preprocessing the data
-```{r, echo=TRUE, results='hide', warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(plyr)
 library(scales)
@@ -35,10 +35,9 @@ qplot(stepsperday, xlab='total steps per day', ylab='Frequency', binwidth=500)
 ```{r}
 Mean_stepsperday <- mean(stepsperday)
 Median_stepsperday <- median(stepsperday)
+Mean_stepsperday
+Median_stepsperday
 ```
-* Mean: `r Mean_stepsperday`
-* Median:  `r Median_stepsperday`
-
 
 
 ## What is the average daily activity pattern?
