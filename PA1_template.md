@@ -1,5 +1,5 @@
 ## Loading and preprocessing the data
-```{r, echo=TRUE, results='hide', warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(plyr)
 library(scales)
