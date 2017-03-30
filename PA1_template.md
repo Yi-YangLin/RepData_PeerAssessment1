@@ -49,6 +49,7 @@ stepsinterval <- aggregate(steps~interval, data=activitydata, mean, na.rm=TRUE)
 plot(steps~interval, data=stepsinterval, type="l", xlab="5-minute interval", ylab = "average number of steps taken")
 
 ```
+![plot of chunk barplot](figure/daily-1.png)
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 ```{r}
@@ -91,6 +92,7 @@ for(i in 1:nrow(activitywoNA)){
 Totalstepsday <- tapply(activitywoNA$steps, activitywoNA$date, sum)
 qplot(Totalstepsday, xlab='total steps each day', ylab='Frequency', binwidth=500)
 ```
+![plot of chunk barplot](figure/histogram-1.png)
 
 (ii) Calculate and report the mean and median total number of steps taken per day. 
 ```{r}
@@ -135,4 +137,6 @@ stepbytype <- aggregate(steps ~ interval + datetype, data=activitywoNA, mean)
 xyplot(steps ~ interval | datetype, stepbytype, type = "l", layout = c(1, 2), xlab = "5-minute interval", ylab = "average number of steps taken")
 
 ```
+![plot of chunk barplot](figure/weekend_comparison-1.png)
+
 
