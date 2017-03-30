@@ -1,5 +1,5 @@
 ## Loading and preprocessing the data
-```{r, warning=FALSE, message=FALSE}
+```{r}
 library(ggplot2)
 library(plyr)
 library(scales)
@@ -8,7 +8,7 @@ library(Hmisc)
 
 
 1. Load the data (i.e. read.csv())
-```{r, results='markup', warning=TRUE, message=TRUE}
+```{r}
 activitydata <- read.csv('activity.csv')
 ```
 
